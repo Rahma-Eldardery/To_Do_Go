@@ -22,7 +22,7 @@ ToDoGo is built using the following technologies:
 
 ## Connect with Me
 
-If you’d like to connect or follow my work, feel free to reach out on [LinkedIn]((https://www.linkedin.com/in/rahma-eldardery-1104402a3/)).
+If you’d like to connect or follow my work, feel free to reach out on [LinkedIn]([https://www.linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/rahma-eldardery-1104402a3/)).
 
 ---
 
