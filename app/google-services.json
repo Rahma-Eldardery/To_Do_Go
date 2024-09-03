@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "939605689330",
+    "project_id": "to-do-go-2c35a",
+    "storage_bucket": "to-do-go-2c35a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939605689330:android:228a1e6a28e0ecc8fda16b",
+        "android_client_info": {
+          "package_name": "com.example.todogo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939605689330-3lakaulvt3gek8uhjfa3btb6sob2motd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHXK-OTFbhPppcMxidJIUOQ5eEPQ-Wr3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939605689330-3lakaulvt3gek8uhjfa3btb6sob2motd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

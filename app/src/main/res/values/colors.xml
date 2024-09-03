@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Background Colors -->
+    <color name="background_color">#F7F7F7</color> <!-- Soft Light Gray Background -->
+
+    <!-- Primary Colors -->
+    <color name="primary_button_color">#FFC0C9</color> <!-- Soft Pink for Buttons -->
+    <color name="dark_blue">#65759B</color> <!-- Soft Blue-Gray for Highlights -->
+
+    <!-- Accent Colors -->
+    <color name="accent_color">#FFD700</color> <!-- Soft Gold for Success or Completed Tasks -->
+
+    <!-- Text Colors -->
+    <color name="primary_text_color">#4F4F4F</color> <!-- Soft Charcoal for Primary Text -->
+    <color name="secondary_text_color">#787878</color> <!-- Soft Gray for Secondary Text -->
+
+    <!-- Info Section -->
+    <color name="info_header_color">#E0F7FA</color> <!-- Soft Aqua Blue for Info Section Headers -->
+
+    <!-- Task Categories -->
+    <color name="personal_category">#DFCDFF</color> <!-- Soft Lavender for Personal Tasks -->
+    <color name="home_category">#FCF8D4</color> <!-- Soft Lemon Chiffon for Home Tasks -->
+    <color name="work_category">#D4F0F9</color> <!-- Soft Light Blue for Work Tasks -->
+
+    <color name="missed_deadline_color">#E84848</color> <!-- Soft Light Blue for Work Tasks -->
+
+
+</resources>

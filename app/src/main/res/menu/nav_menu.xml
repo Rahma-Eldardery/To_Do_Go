@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/all_tasks"
+            android:title="All Tasks"
+            android:icon="@drawable/tasks_list_svgrepo_com" />
+        <item
+            android:id="@+id/personal"
+            android:title="Personal Tasks"
+            android:icon="@drawable/baseline_lock_person_24" />
+        <item
+            android:id="@+id/home"
+            android:title="Home Tasks"
+            android:icon="@drawable/home_1_svgrepo_com" />
+        <item
+            android:id="@+id/work"
+            android:title="Work Tasks"
+            android:icon="@drawable/baseline_work_24" />
+    </group>
+
+  <item
+      android:title="More">
+      <menu>
+          <group
+              android:checkableBehavior="none">
+              <item
+                  android:id="@+id/about_us"
+                  android:title="About Us"
+                  android:icon="@drawable/about_svgrepo_com" />
+              <item
+                  android:id="@+id/logout"
+                  android:title="Log Out"
+                  android:icon="@drawable/baseline_logout_24" />
+          </group>
+      </menu>
+  </item>
+
+</menu>

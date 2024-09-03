@@ -1,0 +1,167 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Task"
+        android:fontFamily="@font/titlefont"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text_color"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nameCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Title"
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/descCard"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="88dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/nameCard"
+        tools:layout_editor_absoluteX="25dp">
+
+        <EditText
+            android:id="@+id/edtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="Description"
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/descCard"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnSetDate"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:tint="@color/dark_blue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Set Date"
+                android:textSize="14sp"
+                android:textColor="@color/primary_text_color"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Setting Time -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/descCard"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnSetTime"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_access_time_black_24dp"
+                app:tint="@color/dark_blue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Set Time"
+                android:textSize="14sp"
+                android:textColor="@color/primary_text_color"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Spinner for Category Selection -->
+
+    <!-- Save Task Button -->
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:entries="@array/spinner_items"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/descCard"
+        app:layout_constraintTop_toBottomOf="@+id/nameCard"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_save_24"
+        app:backgroundTint="@color/primary_button_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
